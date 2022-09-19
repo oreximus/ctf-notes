@@ -73,7 +73,7 @@ Looks the the domain name could be **toppers.htb**
 
 - Checking the url on the browser:
 
-![img06](screeenshots/img06.png)
+![img06](screenshots/img06.png)
 
 ### Getting Details with awscli
 
