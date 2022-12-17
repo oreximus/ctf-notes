@@ -131,6 +131,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ### Web Enumeration
 
 - Checking website on the browser:
-![img01](screenshots/img01.png)
+![img01](imgs/img01.png)
 
 - 
