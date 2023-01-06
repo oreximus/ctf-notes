@@ -1,9 +1,0 @@
-# Nmap 7.92 scan initiated Tue Sep  6 15:32:46 2022 as: nmap -p- -A -T4 -oA nmap/Redeemer 10.129.34.183
-Nmap scan report for 10.129.34.183
-Host is up (0.38s latency).
-Not shown: 65534 closed tcp ports (conn-refused)
-PORT     STATE SERVICE VERSION
-6379/tcp open  redis   Redis key-value store 5.0.7
-
-Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Tue Sep  6 15:48:32 2022 -- 1 IP address (1 host up) scanned in 946.23 seconds

@@ -1,0 +1,7 @@
+307      GET        0l        0w        0c http://api.mentorquotes.htb/admin => http://api.mentorquotes.htb/admin/
+200      GET       31l       62w      969c http://api.mentorquotes.htb/docs
+307      GET        0l        0w        0c http://api.mentorquotes.htb/users => http://api.mentorquotes.htb/users/
+WLD      GET        0l        0w        0c Got 307 for http://api.mentorquotes.htb/users/f1180c7524f64dbcbc08ce09d6173d5b (url length: 32)
+WLD         -         -         - http://api.mentorquotes.htb/users/f1180c7524f64dbcbc08ce09d6173d5b => http://api.mentorquotes.htb/users/f1180c7524f64dbcbc08ce09d6173d5b/
+405      GET        1l        3w       31c http://api.mentorquotes.htb/admin/backup
+405      GET        1l        3w       31c http://api.mentorquotes.htb/users/add

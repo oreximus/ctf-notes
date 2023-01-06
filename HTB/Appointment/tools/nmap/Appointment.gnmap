@@ -1,4 +1,0 @@
-# Nmap 7.92 scan initiated Thu Sep  8 23:39:26 2022 as: nmap -sC -sV -oA nmap/Appointment 10.129.15.137
-Host: 10.129.15.137 ()	Status: Up
-Host: 10.129.15.137 ()	Ports: 80/open/tcp//http//Apache httpd 2.4.38 ((Debian))/	Ignored State: closed (999)
-# Nmap done at Thu Sep  8 23:40:14 2022 -- 1 IP address (1 host up) scanned in 47.77 seconds

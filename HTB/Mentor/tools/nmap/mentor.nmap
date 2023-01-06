@@ -1,0 +1,22 @@
+# Nmap 7.93 scan initiated Wed Dec 28 14:25:58 2022 as: nmap -A -oA nmap/mentor -T4 -vv 10.10.11.193
+Nmap scan report for 10.10.11.193
+Host is up, received syn-ack (0.68s latency).
+Scanned at 2022-12-28 14:25:58 IST for 55s
+Not shown: 998 closed tcp ports (conn-refused)
+PORT   STATE SERVICE REASON  VERSION
+22/tcp open  ssh     syn-ack OpenSSH 8.9p1 Ubuntu 3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 c73bfc3cf9ceee8b4818d5d1af8ec2bb (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBO6yWCATcj2UeU/SgSa+wK2fP5ixsrHb6pgufdO378n+BLNiDB6ljwm3U3PPdbdQqGZo1K7Tfsz+ejZj1nV80RY=
+|   256 4440084c0ecbd4f18e7eeda85c68a4f7 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJjv9f3Jbxj42smHEXcChFPMNh1bqlAFHLi4Nr7w9fdv
+80/tcp open  http    syn-ack Apache httpd 2.4.52
+|_http-title: Did not follow redirect to http://mentorquotes.htb/
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.52 (Ubuntu)
+Service Info: Host: mentorquotes.htb; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Dec 28 14:26:53 2022 -- 1 IP address (1 host up) scanned in 54.89 seconds
