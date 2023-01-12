@@ -42,5 +42,4 @@ print(coolfunction)
 
 - Also from the Hint we are suggested to check some online decoders:
 - Trying on cyberchef.org:
-![img01](screenshots/img01.png)
-- Tested with the **magic** recipe, it worked!
+![img01](screenshots/img11.png)- Tested with the **magic** recipe, it worked!
