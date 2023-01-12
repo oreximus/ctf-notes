@@ -4,6 +4,7 @@
 
 ## Checking the File Properties
 **FILE: enc**
+
 from **file** command we found these properties:
 
 ```
@@ -15,7 +16,7 @@ enc: Unicode text, UTF-8 text, with no line terminators
 灩捯䍔䙻ㄶ形楴獟楮獴㌴摟潦弸強㕤㐸㤸扽
 ```
 
-- From the challege a python program is provided to understand the encyrption:
+- From the challenge a python program is provided to understand the encyrption:
 ```
 ''.join([chr((ord(flag[i]) << 8) + ord(flag[i + 1])) for i in range(0, len(flag), 2)])
 ```
@@ -42,4 +43,5 @@ print(coolfunction)
 
 - Also from the Hint we are suggested to check some online decoders:
 - Trying on cyberchef.org:
-![img01](screenshots/img11.png)- Tested with the **magic** recipe, it worked!
+![img01](screenshots/img11.png)
+- Tested with the **magic** recipe, it worked!
