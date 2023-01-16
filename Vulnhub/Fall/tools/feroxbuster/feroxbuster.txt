@@ -1,0 +1,61 @@
+200      GET      296l      552w        0c https://192.168.29.134/
+MSG      0.000 feroxbuster::heuristics detected directory listing: https://192.168.29.134/assets (Apache)
+200      GET        3l        6w     1150c https://192.168.29.134/favicon.ico
+200      GET      296l      552w        0c https://192.168.29.134/index.php
+MSG      0.000 feroxbuster::heuristics detected directory listing: https://192.168.29.134/modules (Apache)
+200      GET        1l        3w        0c https://192.168.29.134/phpinfo.php
+MSG      0.000 feroxbuster::heuristics detected directory listing: https://192.168.29.134/lib/assets (Apache)
+200      GET        1l        5w       24c https://192.168.29.134/doc/index.html
+200      GET        7l       14w       79c https://192.168.29.134/robots.txt
+MSG      0.000 feroxbuster::heuristics detected directory listing: https://192.168.29.134/tmp (Apache)
+200      GET        1l        5w       24c https://192.168.29.134/lib/index.html
+200      GET      296l      552w        0c http://192.168.29.134/
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.29.134/assets (Apache)
+200      GET        3l        6w     1150c http://192.168.29.134/favicon.ico
+200      GET      296l      552w        0c http://192.168.29.134/index.php
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.29.134/modules (Apache)
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.29.134/lib/assets (Apache)
+200      GET        1l        3w        0c http://192.168.29.134/phpinfo.php
+200      GET        7l       14w       79c http://192.168.29.134/robots.txt
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.29.134/tmp (Apache)
+200      GET        1l        5w       24c http://192.168.29.134/doc/index.html
+200      GET        1l        5w       24c http://192.168.29.134/lib/index.html
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.29.134/lib/lang (Apache)
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.29.134/admin/themes (Apache)
+200      GET        1l        5w       24c http://192.168.29.134/admin/lang/index.html
+200      GET        0l        0w        0c http://192.168.29.134/uploads/index.html
+200      GET        1l        5w       24c http://192.168.29.134/admin/plugins/index.html
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.29.134/uploads/pages (Apache)
+200      GET        1l        5w       24c http://192.168.29.134/lib/plugins/index.html
+200      GET        1l        5w       24c http://192.168.29.134/admin/templates/index.html
+200      GET        1l        5w       24c http://192.168.29.134/lib/classes/internal/index.html
+200      GET        1l        5w       24c http://192.168.29.134/admin/lang/ext/index.html
+200      GET        1l        5w       24c http://192.168.29.134/lib/phpmailer/index.html
+200      GET        0l        0w        0c http://192.168.29.134/uploads/images/index.html
+200      GET        1l        5w       24c http://192.168.29.134/lib/jquery/js/index.html
+200      GET      296l      552w        0c http://192.168.29.134/
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.29.134/assets (Apache)
+200      GET        0l        0w        0c http://192.168.29.134/config.php
+200      GET        3l        6w     1150c http://192.168.29.134/favicon.ico
+200      GET      296l      552w        0c http://192.168.29.134/index.php
+200      GET        1l        5w       24c http://192.168.29.134/doc/index.html
+200      GET        1l        3w        0c http://192.168.29.134/phpinfo.php
+200      GET        7l       14w       79c http://192.168.29.134/robots.txt
+200      GET       78l      283w        0c http://192.168.29.134/admin/login.php
+200      GET        5l        7w        0c http://192.168.29.134/test.php
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.29.134/tmp (Apache)
+200      GET        1l        5w       24c http://192.168.29.134/lib/index.html
+200      GET        0l        0w        0c http://192.168.29.134/lib/include.php
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.29.134/lib/jquery (Apache)
+200      GET        1l        5w       24c http://192.168.29.134/modules/News/index.html
+200      GET        1l        5w       24c http://192.168.29.134/modules/Search/index.html
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.29.134/admin/themes (Apache)
+200      GET      504l     4372w    26421c http://192.168.29.134/lib/phpmailer/LICENSE
+200      GET        1l        5w       24c http://192.168.29.134/modules/News/images/index.html
+200      GET        1l        5w       24c http://192.168.29.134/lib/assets/images/index.html
+200      GET        1l        5w       24c http://192.168.29.134/lib/tasks/index.html
+200      GET        1l        5w       24c http://192.168.29.134/admin/templates/index.html
+200      GET        0l        0w        0c http://192.168.29.134/lib/lang/help/en_US.php
+200      GET        1l        5w       24c http://192.168.29.134/lib/lang/help/index.html
+200      GET        1l        5w       24c http://192.168.29.134/lib/phpmailer/language/index.html
+200      GET      296l      552w        0c http://192.168.29.134/
