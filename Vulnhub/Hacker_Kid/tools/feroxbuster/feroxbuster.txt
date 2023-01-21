@@ -1,0 +1,30 @@
+200      GET      112l      267w     3597c http://192.168.29.248/
+403      GET        9l       28w      279c http://192.168.29.248/.htpasswd
+403      GET        9l       28w      279c http://192.168.29.248/cgi-bin/
+403      GET        9l       28w      279c http://192.168.29.248/cgi-bin/.htaccess
+301      GET        9l       28w      314c http://192.168.29.248/css => http://192.168.29.248/css/
+403      GET        9l       28w      279c http://192.168.29.248/.hta
+403      GET        9l       28w      279c http://192.168.29.248/.htaccess
+301      GET        9l       28w      317c http://192.168.29.248/images => http://192.168.29.248/images/
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.29.248/images (Apache)
+200      GET      112l      267w     3597c http://192.168.29.248/index.php
+301      GET        9l       28w      321c http://192.168.29.248/javascript => http://192.168.29.248/javascript/
+403      GET        9l       28w      279c http://192.168.29.248/server-status
+403      GET        9l       28w      279c http://192.168.29.248/cgi-bin/.hta
+403      GET        9l       28w      279c http://192.168.29.248/cgi-bin/.htpasswd
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.29.248/css (Apache)
+403      GET        9l       28w      279c http://192.168.29.248/javascript/.htaccess
+301      GET        9l       28w      328c http://192.168.29.248/javascript/jquery => http://192.168.29.248/javascript/jquery/
+403      GET        9l       28w      279c http://192.168.29.248/javascript/jquery/.htaccess
+403      GET        9l       28w      279c http://192.168.29.248/javascript/jquery/.hta
+403      GET        9l       28w      279c http://192.168.29.248/javascript/.htpasswd
+403      GET        9l       28w      279c http://192.168.29.248/javascript/.hta
+200      GET    10365l    41507w   271809c http://192.168.29.248/javascript/jquery/jquery
+403      GET        9l       28w      279c http://192.168.29.248/javascript/jquery/.htpasswd
+200      GET      112l      267w     3597c http://192.168.29.248/
+301      GET        9l       28w      317c http://192.168.29.248/images => http://192.168.29.248/images/
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.29.248/images (Apache)
+301      GET        9l       28w      314c http://192.168.29.248/css => http://192.168.29.248/css/
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.29.248/css (Apache)
+200      GET       16l       59w      965c http://192.168.29.248/images/
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://192.168.29.248/images/ (Apache)
