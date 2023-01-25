@@ -1,0 +1,8 @@
+200      GET      147l      526w     6917c http://soccer.htb/
+403      GET        7l       10w      162c http://soccer.htb/.hta
+403      GET        7l       10w      162c http://soccer.htb/.htpasswd
+403      GET        7l       10w      162c http://soccer.htb/.htaccess
+200      GET      147l      526w     6917c http://soccer.htb/index.html
+200      GET      147l      526w     6917c http://soccer.htb/
+301      GET        7l       12w      178c http://soccer.htb/tiny => http://soccer.htb/tiny/
+301      GET        7l       12w      178c http://soccer.htb/tiny/uploads => http://soccer.htb/tiny/uploads/
