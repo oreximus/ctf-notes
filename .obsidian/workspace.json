@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "5a807d91e243c9ad",
+        "id": "377d1edae4bfd119",
         "type": "tabs",
         "children": [
           {
-            "id": "ead221bccad23b59",
+            "id": "1611527032efe4b8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PicoCTFs/transformation/Transformation.md",
+                "file": "HTB/Stocker/Stocker.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PicoCTFs/transformation/Transformation.md",
+                "file": "HTB/Stocker/Stocker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PicoCTFs/transformation/Transformation.md",
+                "file": "HTB/Stocker/Stocker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PicoCTFs/transformation/Transformation.md"
+                "file": "HTB/Stocker/Stocker.md"
               }
             }
           }
@@ -146,6 +146,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ead221bccad23b59",
-  "lastOpenFiles": []
+  "active": "1611527032efe4b8",
+  "lastOpenFiles": [
+    "HTB/Stocker/Stocker.md",
+    "PicoCTFs/transformation/Transformation.md"
+  ]
 }
