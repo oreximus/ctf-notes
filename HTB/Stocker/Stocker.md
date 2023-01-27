@@ -80,15 +80,14 @@ by Ben "epi" Risher 🤓                 ver: 2.7.3
 
 ### Subdomain Enumeration, Using ffuf:
 
-- From **ffuf** we found a subdomain **dev**
-
 **command**:
 ```
 ffuf -w /usr/share/amass/wordlists/subdomains.lst -c -u http://stocker.htb -H "Host: FUZZ.stocker.htb" -mc all > ffuf/ffuf.txt
 ```
 
-**output**:
 ![img02](screenshots/img02.png)
+
+- From **ffuf** we found a subdomain **dev**
 
 ![img03](screenshots/img03.png)
 
