@@ -39,6 +39,12 @@ Service detection performed. Please report any incorrect results at https://nmap
 
 ### Directory Fuzzing, Using: Feroxbuster:
 
+**command**:
+```
+feroxbuster -u http://stocker.htb -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt
+```
+
+**output**:
 ```
 ___  ___  __   __     __      __         __   ___
 |__  |__  |__) |__) | /  `    /  \ \_/ | |  \ |__
@@ -76,6 +82,12 @@ by Ben "epi" Risher 🤓                 ver: 2.7.3
 
 - From **ffuf** we found a subdomain **dev**
 
+**command**:
+```
+ffuf -w /usr/share/amass/wordlists/subdomains.lst -c -u http://stocker.htb -H "Host: FUZZ.stocker.htb" -mc all > ffuf/ffuf.txt
+```
+
+**output**:
 ![img02](screenshots/img02.png)
 
 ![img03](screenshots/img03.png)
