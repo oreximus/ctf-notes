@@ -209,6 +209,8 @@ Let's try to fetch some useful information from the target:
 
 - We successfully got **index.js** in the response and there is a password: **IHeardPassphrasesArePrettySecure**, it's more likely the password for the user **angoose**.
 
+### Initial foothold
+
 - Let's try SSH with this:
 
 ![img16](screenshots/img16.png)
@@ -226,6 +228,8 @@ sudo -l
 ![img17](screenshots/img17.png)
 
 - We can execute **node** as a superuser and the execution of scripts should be in **/usr/local/scripts** folder.
+
+### Privilege Escalation
 
 - Let's create a script to execute bin bash, and run it with node:
 
