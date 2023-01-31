@@ -206,9 +206,9 @@ ssh developer@10.10.11.183
 **Enumerating Consul**:
 
 - By googling we found that : *Consul uses service identities and traditional networking practices to help organizations securely connect applications running in any environment.*
-👉**[for more information](https://www.consul.io/)**👈
+👉[**for more information**](https://www.consul.io/)👈
 
-- Also from our **linpeas.sh** enumeration, we found that a we have a **write permission** in the the directory **/etc/consul.d/config.d**.
+- Also from our **linpeas.sh** enumeration, we found that we have a **write permission** in the directory **/etc/consul.d/config.d**.
 
 ![img11](screenshots/img11.png)
 
