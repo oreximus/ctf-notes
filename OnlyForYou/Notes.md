@@ -134,3 +134,45 @@ ________________________________________________
 
 - Select any of the options from **covert** and **resize** then upload an image file, 
 - after get redirected on the **/list** page intercept the traffic from burpsuite.
+
+![img03](screenshots/img03.png)
+
+- Click on Download Button of any image file which is listed.
+
+- Send the intercepted **/download** request to **repeater** tab in burpsuite and then put **/etc/passwd** directly in the **image** value:
+
+**request**:
+
+![img04](screenshots/img04.png)
+
+**response**:
+
+![img05](screenshots/img05.png)
+
+- the **/etc/passwd** is fetched!
+
+let's pullup some useful information:
+
+
+- From our nmap scan we know that the target is running **nginx** as webserver so let's check into it's configuration.
+
+**/etc/nginx/niginx.conf**
+
+- From **nginx.conf** we get the path of logs, which may contain some useful information!
+
+![img06](screenshots/img06.png)
+
+- **error.log** reveals the path of **only4you.htb** website.
+
+![img07](screenshots/img07.png)
+
+### Inspecting the only4you.htb source-code:
+
+- We do see that only4you.htb has a form available on homepage.
+
+**from form.py**:
+
+- We can see in email verfication function there is a command execution is performed and we can use this to execute our desired command:
+
+![img08](screenshots/img08.png)
+
