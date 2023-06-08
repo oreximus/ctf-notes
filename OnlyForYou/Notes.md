@@ -116,4 +116,21 @@ ________________________________________________
 
 - Found a subdomain **beta**, also we need to add it to our **/etc/hosts** first! and let's check it!
 
+![img01](screenshots/img01.png)
 
+- A image conversion program is running by the webserver.
+
+- Also there is an option to download the source-code of the webapplication.
+
+### Reviewing the Source-Code:
+
+- from **app.py** in the download function we found this issue:
+
+![img02](screenshots/img02.png)
+
+- It can lead us to the Directory Path Traversal.
+
+### Path Traversal Attack
+
+- Select any of the options from **covert** and **resize** then upload an image file, 
+- after get redirected on the **/list** page intercept the traffic from burpsuite.
