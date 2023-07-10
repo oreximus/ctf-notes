@@ -101,3 +101,11 @@ Service detection performed. Please report any incorrect results at https://nmap
 
 1. **22** running **ssh**.
 2. **55555** running **HTTP** as a service.
+
+- By Visiting http://10.10.11.224:55555/ it redirects us to http://10.10.11.224:55555/web
+
+![img01](imgs/img01.png)
+
+- Also from source code on web homepage we found that web is using **Request-Basket** in their application and the version we got is vulnerable to **SSRF**!
+
+![img02](imgs/img02.png)
